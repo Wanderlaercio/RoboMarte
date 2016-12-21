@@ -19,7 +19,13 @@ public class Robo {
 	public void andar(){
 		if (this.orientacao.getOrientacao()==1) {
 			moverNorte();
-		}
+		} else if(this.orientacao.getOrientacao()==2){
+			moverDireita();
+		} else if(this.orientacao.getOrientacao()==3){
+			moverSul();
+		} else if(this.orientacao.getOrientacao()==4){
+			moverEsquerda();
+		} 
 	}
 	
 	private void mudarOrientacao(char movimento){
