@@ -12,7 +12,7 @@ public class RoboTest {
 	@Test
 	public void movimentoParaEsquerda(){
 		Robo robo = new Robo();
-		String saida = robo.mover("MM");
-		Assert.assertEquals("(0,2,N)", saida);
+		String saida = robo.mover("MML");
+		Assert.assertEquals("(0,2,W)", saida);
 	}
 }
