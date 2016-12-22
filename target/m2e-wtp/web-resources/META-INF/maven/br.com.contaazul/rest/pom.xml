@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.contaazul</groupId>
-  <artifactId>desafio</artifactId>
+  <artifactId>rest</artifactId>
   <packaging>war</packaging>
   <version>1.0</version>
   <name>desafio Maven Webapp</name>
@@ -13,23 +13,18 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
+      <scope>test</scope>
     </dependency>
     
     <dependency>
     	<groupId>javax</groupId>
     	<artifactId>javaee-api</artifactId>
     	<version>7.0</version>
+    	<scope>provided</scope>
     </dependency>
-    
-    <dependency>
-    	<groupId>com.sun.jersey</groupId>
-    	<artifactId>jersey-server</artifactId>
-    	<version>1.8</version>
-    </dependency>
-    
   </dependencies>
   
   <build>
-    <finalName>desafio</finalName>
+    <finalName>rest</finalName>
   </build>
 </project>
