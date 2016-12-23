@@ -2,9 +2,9 @@ package br.com.contaazul;
 
 public class Robot {
 
-	public int x;
-	public int y;
-	public Orientation orientation = Orientation.NORTH;
+	private int x;
+	private int y;
+	private Orientation orientation = Orientation.NORTH;
 
 	public String move(String movements, Ground ground) throws Exception {
 		for (int i = 0; i < movements.length(); i++) {
@@ -35,7 +35,7 @@ public class Robot {
 		return String.format("(%d,%d,%s)", x, y, orientation.getCardinalPoint());
 	}
 
-	public void explore() {
+	private void explore() {
 		switch (this.orientation.getOrientation()) {
 		case 1:
 			y++;

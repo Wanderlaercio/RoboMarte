@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
 import br.com.contaazul.Ground;
 import br.com.contaazul.Robot;
 
-@Path("/{path: ([A-Z])+}")
+@Path("/{path: (A-Z)+}")
 public class RobotController {
 
 	@POST

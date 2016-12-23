@@ -60,5 +60,4 @@ public class RobotTest {
 		}
 		Assert.assertEquals("(0,0,N)", asnwer);
 	}
-
 }
